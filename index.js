@@ -10,9 +10,6 @@ $(document).ready(function () {
 		L.marker([lat, lng]).addTo(map);
 
 		ShowQuantityMap17(lng,lat);
-		
-
-
 		nhom12Ranking(lat, lng);
 		nhom8Ranking(lat, lng);
 		nhom5Ranking(lat, lng);
