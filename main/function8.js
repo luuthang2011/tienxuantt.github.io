@@ -98,7 +98,7 @@ function supermarketPoint(lat, lng) {
 
 function nhom8Ranking(lat, lng){
   var parkRankingt = parkPoint(lat,lng);
-  console.log(parkRankingt);
+
   $(".parkRanking1").text(5-parkRankingt[0] + "/5");
   $(".parkRanking2").text(parkRankingt[1]);
   $(".parkRanking3").text(parkRankingt[2]);
@@ -107,7 +107,7 @@ function nhom8Ranking(lat, lng){
   $(".parkRanking6").text(parkRankingt[5]);
 
   var marketRankingt = marketPoint(lat,lng);
-  console.log(marketRankingt)
+
   $(".marketRanking1").text(5-marketRankingt[0] + "/5");
   $(".marketRanking2").text(marketRankingt[1]);
   $(".marketRanking3").text(marketRankingt[2]);
@@ -116,7 +116,7 @@ function nhom8Ranking(lat, lng){
   $(".marketRanking6").text(marketRankingt[5]);
 
   var supermarketRankingt = supermarketPoint(lat,lng);
-  console.log(supermarketRankingt);
+ 
   $(".supermarketRanking1").text(5-supermarketRankingt[0] + "/5");
   $(".supermarketRanking2").text(supermarketRankingt[1]);
   $(".supermarketRanking3").text(supermarketRankingt[2]);

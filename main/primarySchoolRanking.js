@@ -38,7 +38,7 @@ function primarySchoolRanking(lat, lon){
 		}
 	}
 
-	console.log(numInRange);
+
 	var total=0;
 	for(var i=0; i< range.length; i++){
 		total= total+ numInRange[i];

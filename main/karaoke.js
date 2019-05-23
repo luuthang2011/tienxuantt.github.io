@@ -43,7 +43,7 @@ function karaokePoint(lat, lng) {
 
 function nhom14Ranking(lat, lng){
   var karaokeRankingt = karaokePoint(lat,lng);
-  console.log(karaokeRankingt);
+ 
   $(".karaokeRanking1").text(10-karaokeRankingt[0] + "/10");
   $(".karaokeRanking2").text(karaokeRankingt[1]);
   $(".karaokeRanking3").text(karaokeRankingt[2]);

@@ -1,16 +1,22 @@
 
 $(document).ready(function () {
+	var count = 0;
 	$(".icon-show").click(function(){
 		$(".show-ranking").toggle();
 	});
 	$(".icon-hide").click(function(){
 		$(".icon-hide, .show-ranking").hide();
 	});
+	var theMarker = {};
 	map.on('click', function (e) {
 		$(".icon-hide, .show-ranking").show();
 		let lat = e.latlng.lat;
 		let lng = e.latlng.lng;
-		L.marker([lat, lng]).addTo(map);
+		if (count > 0) {
+			map.removeLayer(theMarker);
+		};
+		theMarker = L.marker([lat,lng]).addTo(map);  
+	 	count++;
 		ShowQuantityMap17(lng,lat);
 		nhom12Ranking(lat, lng);
 		nhom8Ranking(lat, lng);
@@ -31,4 +37,3 @@ function Nhom1234(x,y){
 	diem3 = getResultMarker_Nhom_3(x, y);
 	diem4 = getResultMarker_Nhom_4(x, y);
 }
-
