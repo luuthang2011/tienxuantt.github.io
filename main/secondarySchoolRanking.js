@@ -56,7 +56,7 @@ function secondarySchool(lat, lon){
 
 function nhom11Ranking(lat, lng){
 		var secondarySchoolRankingt = secondarySchool(lng,lat);
-		console.log(secondarySchoolRankingt);
+		
 		$(".secondarySchoolRanking1").text(secondarySchoolRankingt[0] + "/5");
 		$(".secondarySchoolRanking2").text(secondarySchoolRankingt[1]);
 		$(".secondarySchoolRanking3").text(secondarySchoolRankingt[2]);

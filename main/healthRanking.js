@@ -109,7 +109,7 @@ function healthRanking(lat_o,lng_o){
 
 function nhom9Ranking(lat, lng){
     var healthRankingt = healthRanking(lat,lng);
-		$(".healthRanking1").text(healthRankingt[0] + "/10");
+		$(".healthRanking1").text(Math.round(healthRankingt[0]) + "/10");
 		$(".healthRanking2").text(healthRankingt[1]);
 		$(".healthRanking3").text(healthRankingt[2]);
 		$(".healthRanking4").text(healthRankingt[3]);

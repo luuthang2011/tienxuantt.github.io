@@ -55,8 +55,8 @@ function primarySchoolRanking(lat, lon){
 }
 function nhom10Ranking(lat, lng){
     var primarySchoolRankingt = primarySchoolRanking(lng,lat);
-    	console.log(primarySchoolRankingt)
-		$(".primarySchoolRanking1").text(primarySchoolRankingt[0] + "/10");
+    	
+		$(".primarySchoolRanking1").text(Math.round(primarySchoolRankingt[0]) + "/10");
 		$(".primarySchoolRanking2").text(primarySchoolRankingt[1]);
 		$(".primarySchoolRanking3").text(primarySchoolRankingt[2]);
 		$(".primarySchoolRanking4").text(primarySchoolRankingt[3]);

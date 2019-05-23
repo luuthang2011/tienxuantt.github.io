@@ -66,7 +66,7 @@ function getPoint(lat1,lon1){
 }
 function nhom9Function(lat, lng){
     var mn = getPoint(lat,lng);
-    $(".mn1").text(mn[0] + "/10");
+    $(".mn1").text(Math.round(mn[0]) + "/10");
     $(".mn2").text(mn[1]);
     $(".mn3").text(mn[2]);
     $(".mn4").text(mn[3]);

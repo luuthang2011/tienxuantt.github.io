@@ -34,13 +34,13 @@ a{
 }
 .go-detail{
     position: fixed;
-    right: 3px;
-    top: 48px;
+    right: -48px;
+    top: -20px;
     opacity: 1.7;
-    height: 42px;
-    width: 44px;
+    height: 100px;
+    width: 200px;
 }
 .go-detail img{
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 78%;
 }
