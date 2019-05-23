@@ -53,7 +53,7 @@ $(document).ready(function () {
                 }
             )
             $("#map").animate(
-                {left:'0px',right:'146px'},300
+                {left:'0px',right:'0px'},300
             );
             
         }
